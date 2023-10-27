@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="styles.css">
     <title>Projects</title>
 </head>
-<script src="script.js"></script>
 <body>
     <header>
-        Raymond
+        <a href = "index.html">Raymond</a>
         <nav class = "sidebar">
             <a href="./resume.html">Resume</a> |
             <a href="./projects.html">Projects</a> |
@@ -43,7 +42,10 @@
         Here is some experimenting with different HTML tags. I will most likely take this part out later on.<br>
         <hr>
         Interested in Using:
-        
+        <video height = "400" controls>
+            <source src="media/videos/catvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <details>
             <summary>Most Likely Not Using</summary>
             <audio controls>
@@ -60,8 +62,8 @@
                 ctx.fillStyle = "#FF0000";
                 ctx.fillRect(0, 0, 80, 80);  
             </script>
-            <svg width="400" height="100">
-                <rect width="400" height="100"stroke="green" stroke-width="10" fill="blue" />
+            <svg>
+                <rect width="400" height="100" stroke="green" stroke-width="10" fill="blue" />
             </svg>
             <form>
                 <fieldset>
@@ -84,8 +86,8 @@
                     <label for="check">yes</label><br>
                     <textarea>This is a text area</textarea>
 
-                    <label for="datalists">This is a datalist:</label>
-                    <input list="data" name="datalists" id="datalists">
+                    <label for="datalist">This is a datalist:</label>
+                    <input list="datalists" name="datalist" id="datalist">
                     <datalist id="datalists">
                         <option value="Data 1">
                         <option value="Data 2">
@@ -96,8 +98,8 @@
             <table>
                 <caption>Trying table</caption>
                 <colgroup>
-                    <col width = "1000">
-                    <col width = "100">
+                    <col>
+                    <col>
                 </colgroup>
                 <tr>
                   <th>Index</th>
@@ -109,10 +111,12 @@
                 </tr>
             </table>
         </details>
+
     </div>
 
     <footer>
         <span>Author: Raymond Umbas</span>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
