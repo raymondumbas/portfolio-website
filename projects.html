@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Projects</title>
+</head>
+<script src="script.js"></script>
+<body>
+    <header>
+        Raymond
+        <nav class = "sidebar">
+            <a href="./resume.html">Resume</a> |
+            <a href="./projects.html">Projects</a> |
+            <a href="./experience.html">Experience</a> |
+            <a href="./about.html">About</a> 
+        </nav>
+    </header>
+
+    <h1>Projects</h1> 
+    <strong>Here is some stuff I have worked on<br></strong>
+
+    <!-- PROJECT 1 -->
+    <button class="proj_preview" id = "proj1_preview">
+        Project 1 <br>
+        <img src = "media/images/project1.jpg" alt = "Image preview of Project 1">
+    </button>
+    <div class = "project" id = "project1">
+        Project 1 Name <br>
+        <em>A brief description of the purpose and implementation of this project.</em><br>
+        For this project the <code>filler</code> variable was very important.
+    </div>
+
+
+    <!-- PROJECT 2 (EXPERIMENTAL ZONE)-->
+    <button class="proj_preview" id = "proj2_preview">
+        Experimental Zone <br>
+        <img src = "media/images/project2.jpg" alt = "Image preview of Project 2">
+    </button>
+    <div class = "project" id = "project2">
+        Experimental Zone <br>
+        Here is some experimenting with different HTML tags. I will most likely take this part out later on.<br>
+        <hr>
+        Interested in Using:
+        
+        <details>
+            <summary>Most Likely Not Using</summary>
+            <audio controls>
+                <source src="media/audio/crickets.mp3" type="audio/mpeg">
+                Audio could not be played.
+            </audio>
+            <canvas id = "canvas_test" width="300" height="150">
+            Canvas is not supported.
+            </canvas><br>
+            <script>
+                //Based off of example given on https://www.w3schools.com/tags/tag_canvas.asp
+                let canvas = document.getElementbyId("canvas_test");
+                let ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 80, 80);  
+            </script>
+            <svg width="400" height="100">
+                <rect width="400" height="100"stroke="green" stroke-width="10" fill="blue" />
+            </svg>
+            <form>
+                <fieldset>
+                    <legend>Form Related Testing</legend>
+                    <ol>
+                        <li>item 1</li>
+                        <li>item 1</li>
+                    </ol>
+                    <select>
+                        <optgroup label="Group 1">
+                        <option value="g11">Option 1</option>
+                        <option value="g12">Option 2</option>
+                        </optgroup>
+                        <optgroup label="Group 2">
+                            <option value="g21">Option 1</option>
+                            <option value="g22">Option 2</option>
+                        </optgroup>
+                    </select>
+                    <input type="checkbox" id="check" name="check" value="yes">
+                    <label for="check">yes</label><br>
+                    <textarea>This is a text area</textarea>
+
+                    <label for="datalists">This is a datalist:</label>
+                    <input list="data" name="datalists" id="datalists">
+                    <datalist id="datalists">
+                        <option value="Data 1">
+                        <option value="Data 2">
+                    </datalist>
+                </fieldset>
+            </form>
+            <template> Some hidden thing</template>
+            <table>
+                <caption>Trying table</caption>
+                <colgroup>
+                    <col width = "1000">
+                    <col width = "100">
+                </colgroup>
+                <tr>
+                  <th>Index</th>
+                  <th>Value</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Number</td>
+                </tr>
+            </table>
+        </details>
+    </div>
+
+    <footer>
+        <span>Author: Raymond Umbas</span>
+    </footer>
+</body>
+</html>
