@@ -1,27 +1,87 @@
 /*Variables*/
+/*rgb(66, 71, 95)*/
 :root{
     --background-color: rgb(39, 44, 68);
-    --component-color: rgb(66, 71, 95);
+    --component-color: rgb(41, 46, 69);
+    --navBar-color:rgb(50, 56, 85);
     --text-color: rgb(219, 221, 236);
 }
+html{
+    padding:0;
+    margin:0;
+}
 /* Remove default styles */
-html,body{
+body{
     margin:0;
     padding:0;
     color: var(--text-color,white);
     background-color: var(--background-color,darkgrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
 
-/*Navbar*/
-.navBar{
-    font-size: 2rem;
-    background-color: var(--component-color, darkgrey);
-    width: 100vw;
-}
+
 
 /*Components*/
 .component{
     width: 70vw;
     height:70vh;
     background-color: var(--component-color,darkgrey);
+    padding: 5rem;
+}   
+
+.componentTitle{
+    font-size: 3rem;
+}
+.componentSection{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Navbar*/
+#navBar{
+    padding-left: 5rem;
+    background-color: var(--navBar-color, darkgrey);
+    width: 100vw;
+    top:0;
+    position:fixed;
+}
+
+.navBarLink{
+    font-size: 1.5rem;
+    margin: 1rem;
+    transition: 0.5s;
+}
+.navBarLink:hover{
+    font-size:2rem;
+}
+
+a:link,a:visited{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgba(255, 255, 255, 0.108);  
+}
+/*Intro*/
+#intro{
+    margin-top: 5rem;
+    background-color: var(--component-color, darkgrey);
+    width: 60vw;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+}
+#intro img{
+    height: 3rem;
+    width: 3rem;
+}
+#socials{
+    background-color: var(--navBar-color);
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
 }
