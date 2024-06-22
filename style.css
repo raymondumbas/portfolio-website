@@ -1,0 +1,27 @@
+/*Variables*/
+:root{
+    --background-color: rgb(39, 44, 68);
+    --component-color: rgb(66, 71, 95);
+    --text-color: rgb(219, 221, 236);
+}
+/* Remove default styles */
+html,body{
+    margin:0;
+    padding:0;
+    color: var(--text-color,white);
+    background-color: var(--background-color,darkgrey);
+}
+
+/*Navbar*/
+.navBar{
+    font-size: 2rem;
+    background-color: var(--component-color, darkgrey);
+    width: 100vw;
+}
+
+/*Components*/
+.component{
+    width: 70vw;
+    height:70vh;
+    background-color: var(--component-color,darkgrey);
+}
