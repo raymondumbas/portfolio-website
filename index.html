@@ -11,44 +11,92 @@
 <body>
     <!--Navbar-->
     <div id = "navBar">
-        <a href = "#intro" style = "font-size: 2.5rem"> Raymond Umbas</a>
-        <a class = "navBarLink" href = "#education">Education</a>
+        <a href = "#intro" style = "font-size: 1.5rem"> Raymond Umbas</a>
         <a class = "navBarLink" href = "#projects">Projects</a>
         <a class = "navBarLink" href = "#skills">Skills</a>
+        <a class = "navBarLink" href = "./media/Resume.pdf">Resume</a>
     </div>
     <!--Intro-->
-    <section id = "intro" style = "display:flex;">
-        <div class = "componentSection">
-            <span class = "componentTitle">Hi, I'm Raymond!</span>
-            Here's everything you need to know about my experience.<br>
-            Looking forward to working with you soon.
-        </div>
-        <div id = "socials" class = "componentSection">
-            <span>
-                <img src="./media/githubLogo.png"></img>
-                <a href="https://github.com/raymondumbas">raymondumbas</a>
-            </span> 
-            <span>
-                <img src="./media/linkedinLogo.svg"></img>
-                <a href = "https://www.linkedin.com/in/rumbas/">rumbas</a>
-            </span>
+    <section id = "intro" class = "component">
+        <h1>Hi, I'm Raymond!</h1>
+        <div class = "componentContent">
+            <div id = "about" class = "componentSection">
+                I am a recent Computer Science Graduate from UCSD eager to begin my career. Although I am fairly new to the field
+                I am always excited to learn new concepts and tools to better my skills. <br><br>
+
+                From a young age, I had an interest in STEM because of video games and a creative side expressed through the arts and toys centered around building.
+                I have always seen coding and developing to align with these interests because of how you can assemble these different functions, frameworks, algorithms, etc. 
+                into essentially whatever you want.<br><br>
+
+                Outside of tech, my hobbies are photography (portfolio site coming soon), fashion, and music.
+            </div>
+    
+            <div id = "links" class = "componentSection">
+                <a href="https://github.com/raymondumbas"><img class = "introIcon" src="./media/githubLogo.png"></img></a>  
+                <a href = "https://www.linkedin.com/in/rumbas/"><img class = "introIcon" src="./media/linkedinLogo.svg"></img></a>
+                <a href = "./media/Resume.pdf"><img class = "introIcon" src="./media/resumeIcon.png"></img></a>
+            </div>
         </div>
         
     </section>
-    <!--Education-->
-    <section id = "education" class = "component">
-        <span class = "componentTitle">Education</span>
-    </section>
+
     <!--Projects-->
     <section id = "projects" class = "component">
-        <span class = "componentTitle">Projects</span>
+        <h1>Projects</h1>
+        <div class = "componentContent">
+            <div class = "project">
+                <h2>Reflect</h2>
+                <img class = "projectPic" src = "./media/ReflectHomeScreen.png"></img>
+                <br>
+                Web-Based application for a "Daily Mental Health Checkin" with an HTML/CSS frontend and JS backend. 
+                I was a part of a scrum team and we used an AGILE approach through sprints, daily stand ups, and retrospectives.
+                I had sole responsibility of the "edit page". <br><br>
+                <a href ="https://github.com/cse110-fa22-group16/cse110-fa22-group16"><img class = "projectIcon" src="./media/githubLogo.png"></img></a><br>
+            </div>
+            <div class = "project">
+                <h2>Portfolio Website</h2>
+                <img class = "projectPic" src = "./media/PortfolioWebsite.png"></img><br>
+                Personal Portfolio Website developed using HTML/CSS with a responsive design.<br><br>
+                <a href ="https://github.com/raymondumbas/portfolio-website"><img class = "projectIcon" src="./media/githubLogo.png"></img></a><br>
+            </div>  
+        </div>
+       
     </section>
     <!--Skills-->
     <section id = "skills" class = "component">
-        <span class = "componentTitle">Skills</span>
+        <h1>Skills</h1>
+        <div class = "componentContent">
+            <div class = "skills">
+                <ul>Technical Languages</ul>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>SQLite</li>
+            </div>
+            <div class = "skills">
+                <ul>Tools and Frameworks</ul>
+                <li>Git</li>
+                <li>ReactJS</li>
+                <li>NodeJS</li>
+                <li>TailwindCSS</li>
+                <li>LaTeX</li>
+                <li>VS Code</li>
+            </div>
+            <div class = "skills">
+                <ul>Essential Traits</ul>
+                <li>Effective communicaiton</li>
+                <li>Taking initiative</li>
+                <li>Consistent work ethic</li>
+                <li>Attention to detail</li>
+                <li>Growth mindset</li>
+                <li>SQL</li>
+            </div>
+
+ 
+        </div>
     </section>
 
-
-    <script src="index.js"></script>
 </body>
 </html>

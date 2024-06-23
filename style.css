@@ -1,5 +1,5 @@
 /*Variables*/
-/*rgb(66, 71, 95)*/
+
 :root{
     --background-color: rgb(39, 44, 68);
     --component-color: rgb(41, 46, 69);
@@ -29,15 +29,33 @@ body{
     width: 70vw;
     height:70vh;
     background-color: var(--component-color,darkgrey);
-    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding:3rem 5rem;
+    margin: 4rem 0rem;
+    align-items: center;
+    
 }   
 
-.componentTitle{
+h1{
     font-size: 3rem;
+    padding: 0;
+    margin:0;
 }
+
 .componentSection{
     display: flex;
     flex-direction: column;
+    
+    
+}
+
+.componentContent{
+    display:flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    gap: 3rem;
+    
 }
 
 /*Navbar*/
@@ -65,23 +83,31 @@ a:link,a:visited{
 a:hover{
     background-color: rgba(255, 255, 255, 0.108);  
 }
-/*Intro*/
-#intro{
-    margin-top: 5rem;
-    background-color: var(--component-color, darkgrey);
-    width: 60vw;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    gap: 20rem;
+
+/* Intro */
+#about{
+    font-size: 1.5rem;
 }
-#intro img{
-    height: 3rem;
-    width: 3rem;
+.introIcon{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 25px;
 }
-#socials{
-    background-color: var(--navBar-color);
-    padding: 1rem;
-    display: flex;
-    gap: 1rem;
+#links{
+    width: 30vw;
+    gap: 2rem;
+    margin-left:10rem;
+}
+
+/*Projects*/
+.project{
+    width: 30vw;
+}
+
+.projectPic{
+    width: 20vw;
+}
+
+.projectIcon{
+    width:3rem;
 }
