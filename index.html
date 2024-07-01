@@ -11,16 +11,26 @@
 <body>
     <!--Navbar-->
     <div id = "navBar">
-        <a href = "#intro" style = "font-size: 1.5rem"> Raymond Umbas</a>
+        <a id = "homeLogo" href = "#intro" > RAYMOND UMBAS</a>
         <a class = "navBarLink" href = "#projects">Projects</a>
         <a class = "navBarLink" href = "#skills">Skills</a>
-        <a class = "navBarLink" href = "./media/Resume.pdf">Resume</a>
+        <a class = "navBarLink" href = "#experience">Experience</a>
     </div>
     <!--Intro-->
     <section id = "intro" class = "component">
-        <h1>Hi, I'm Raymond!</h1>
+        <span id = "introName">Raymond Umbas</span>
+        Computer Science
+        <div id = "links">
+            <a href="https://github.com/raymondumbas"><img class = "introIcon" src="./media/githubLogo.png"></img></a>  
+            <a href = "https://www.linkedin.com/in/rumbas/"><img class = "introIcon" src="./media/linkedinLogo.svg"></img></a>
+            <a href = "./media/Resume.pdf"><img class = "introIcon" src="./media/resumeIcon.png"></img></a>
+        </div>
+    </section>
+
+    <!--About Me-->
+    <section id = "about" class = "component">
         <div class = "componentContent">
-            <div id = "about" class = "componentSection">
+            <div class = "componentSection">
                 I am a recent Computer Science Graduate from UCSD eager to begin my career. Although I am fairly new to the field
                 I am always excited to learn new concepts and tools to better my skills. <br><br>
 
@@ -30,16 +40,9 @@
 
                 Outside of tech, my hobbies are photography (portfolio site coming soon), fashion, and music.
             </div>
-    
-            <div id = "links" class = "componentSection">
-                <a href="https://github.com/raymondumbas"><img class = "introIcon" src="./media/githubLogo.png"></img></a>  
-                <a href = "https://www.linkedin.com/in/rumbas/"><img class = "introIcon" src="./media/linkedinLogo.svg"></img></a>
-                <a href = "./media/Resume.pdf"><img class = "introIcon" src="./media/resumeIcon.png"></img></a>
-            </div>
         </div>
-        
-    </section>
 
+    </section>
     <!--Projects-->
     <section id = "projects" class = "component">
         <h1>Projects</h1>

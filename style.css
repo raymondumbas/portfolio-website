@@ -1,5 +1,7 @@
 /*Variables*/
-
+*{
+    font-family:  monospace, Arial, Helvetica, sans-serif;
+}
 :root{
     --background-color: rgb(39, 44, 68);
     --component-color: rgb(41, 46, 69);
@@ -23,7 +25,9 @@ body{
 }
 
 
-
+#homeLogo{
+    font-size: 2rem;
+}
 /*Components*/
 .component{
     width: 70vw;
@@ -46,7 +50,6 @@ h1{
 .componentSection{
     display: flex;
     flex-direction: column;
-    
     
 }
 
@@ -85,8 +88,15 @@ a:hover{
 }
 
 /* Intro */
-#about{
-    font-size: 1.5rem;
+#intro{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+#introName{
+    font-size: 6rem;
 }
 .introIcon{
     height: 6rem;
@@ -94,11 +104,15 @@ a:hover{
     border-radius: 25px;
 }
 #links{
-    width: 30vw;
+    display: flex;
+    flex-direction: row;
     gap: 2rem;
-    margin-left:10rem;
 }
 
+/* About Me*/
+#about{
+    font-size: 1.5rem;
+}
 /*Projects*/
 .project{
     width: 30vw;
