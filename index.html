@@ -12,7 +12,10 @@
     <!--Navbar-->
     <div id = "navBar">
         <a id = "homeLogo" href = "#intro" > RAYMOND UMBAS</a>
+        <a class = "navBarLink" href = "#about">About</a>
         <a class = "navBarLink" href = "#projects">Projects</a>
+        <a class = "navBarLink" href = "#experience">Experience</a>
+        <a class = "navBarLink" href = "#coursework">Coursework</a>
         <a class = "navBarLink" href = "#skills">Skills</a>
     </div>
     <!--Intro-->
@@ -28,17 +31,17 @@
 
     <!--About Me-->
     <section id = "about" class = "component">
+        <h1>About Me</h1>
         <div class = "componentContent">
-            <div class = "componentSection">
-                I am a recent Computer Science Graduate from UCSD eager to begin my career. Although I am fairly new to the field
-                I am always excited to learn new concepts and tools to better my skills. <br><br>
+            I am a recent Computer Science Graduate from UCSD eager to begin my career. Although I am fairly new to the field
+            I am always excited to learn new concepts and tools to better my skills. <br><br>
 
-                From a young age, I had an interest in STEM because of video games and a creative side expressed through the arts and toys centered around building.
-                I have always seen coding and developing to align with these interests because of how you can assemble these different functions, frameworks, algorithms, etc. 
-                into essentially whatever you want.<br><br>
+            From a young age, I had an interest in STEM because of video games and a creative side expressed through the arts and toys centered around building.
+            I have always seen coding and developing to align with these interests because of how you can assemble these different functions, frameworks, algorithms, etc. 
+            into essentially whatever you want.<br><br>
 
-                Outside of tech, my hobbies are photography (portfolio site coming soon), fashion, and music.
-            </div>
+            Outside of tech, my hobbies are photography (portfolio site coming soon), fashion, and music.
+            
         </div>
 
     </section>
@@ -47,22 +50,86 @@
         <h1>Projects</h1>
         <div class = "componentContent">
             <div class = "project">
+                <a href ="https://github.com/cse110-fa22-group16/cse110-fa22-group16"><img class = "projectIcon" src="./media/githubLogo.png"></img></a>
                 <h2>Reflect</h2>
-                <img class = "projectPic" src = "./media/ReflectHomeScreen.png"></img>
-                <br>
+                <img class = "projectPic" src = "./media/ReflectHomeScreen.png"></img><br>
                 Web-Based application for a "Daily Mental Health Checkin" with an HTML/CSS frontend and JS backend. 
                 I was a part of a scrum team and we used an AGILE approach through sprints, daily stand ups, and retrospectives.
                 I had sole responsibility of the "edit page". <br><br>
-                <a href ="https://github.com/cse110-fa22-group16/cse110-fa22-group16"><img class = "projectIcon" src="./media/githubLogo.png"></img></a><br>
+            
             </div>
             <div class = "project">
-                <h2>Portfolio Website</h2>
-                <img class = "projectPic" src = "./media/PortfolioWebsite.png"></img><br>
-                Personal Portfolio Website developed using HTML/CSS with a responsive design.<br><br>
-                <a href ="https://github.com/raymondumbas/portfolio-website"><img class = "projectIcon" src="./media/githubLogo.png"></img></a><br>
+                <a href ="https://github.com/raymondumbas/lol-stats"><img class = "projectIcon" src="./media/githubLogo.png"></img></a><br>
+                <h2>LoL Stats</h2>
+                <img class = "projectPic" src = "./media/lolStatsScreenshot.png"></img><br>
+                Electron Desktop Application to track player statistics from the video game, League of Legends, with an HTML/CSS frontend and JS backend using the Riot Games Developer API <br><br>
             </div>  
+            <div class = "project">
+                <a href ="https://github.com/raymondumbas/portfolio-website"><img class = "projectIcon" src="./media/githubLogo.png"></img></a><br>
+                <h2>Portfolio Website</h2>
+                <img class = "projectPic" src = "./media/portfolioScreenshot.png"></img><br>
+                Personal Portfolio Website developed using HTML/CSS with a responsive design.<br><br>
+            </div>  
+        </div> 
+    </section>
+
+    <!--Experience-->
+    <section id = "experience" class = "component">
+        <h1>Work Experience</h1>
+        <div id = "jobs" class = "componentContent">
+            <div class = "job">
+                <span class = "jobYears">Jun 2023 - Present</span>
+                <span class = "jobTitle">Inbound Expert Trainer</span><br>
+                <span class = "jobCompany">Target</span><br><br>
+                Conducted training for onboarding new Inbound Expert team members, 
+                sorted products from the trailer onto organized vehicles and 
+                stocked and arranged products on sales floor shelves.
+            </div>
+            <div class = "job">
+                <span class = "jobYears">Jan 2023 - Jun 2023</span>
+                <span class = "jobTitle">Project Specialist</span><br>
+                <span class = "jobCompany">The Container Store</span><br><br>
+                Organized and stocked shelves.
+                Assisted customers with looking for items in store and online.
+                Found solutions for customers' organization and storage needs.
+            </div>
+            <div class = "job">
+                <span class = "jobYears">Sep 2021 - Jan 2023</span>
+                <span class = "jobTitle">Food Runner/Takeout</span><br>
+                <span class = "jobCompany">BJ's Restaurant Inc.</span><br><br>
+                Brought food out to the table and maintained general kitchen cleanliness.
+                Wrote up customer takeout orders and processed payments.
+                Packed, organized, and brought out takeout orders.
+            </div>
+            <div class = "job">
+                <span class = "jobYears">Jul 2020 - Sep 2021</span>
+                <span class = "jobTitle">Personal Shopper</span><br>
+                <span class = "jobCompany">Walmart</span><br><br>
+                Selected items for online orders, achieving a pick rate approximately 70% above average,
+                organized order totes and brought them out to customers, and
+                utilized department’s order database to query order statuses and resolve customer issue.
+            </div>
+            <div class = "job">
+                <span class = "jobYears">May 2019 - Aug 2020</span>
+                <span class = "jobTitle">Shift Leader</span><br>
+                <span class = "jobCompany">Coldstone Creamery</span><br><br>
+                Managed all in-store operations by delegating tasks to crew members, scheduled breaks, and handled all customer complaints.
+                Conducted training for new crew members and shift leader. Tracked inventory and reported daily sales for two locations.
+                Maintained store cleanliness, assisted customers, and restocked supplies.
+            </div>
         </div>
-       
+    </section>
+    <!--Coursework-->
+    <section id = "coursework" class = "component">
+        <h1><ul>Relevant Coursework</ul></h1>
+        <li>CSE 100 Advanced Data Structures (C++, Data Structures)</li>
+        <li>CSE 120 Principles of Computer Operating Systems (C++)</li>
+        <li>CSE 110 Software Engineering (HTML,CSS,JS,AGILE)</li>
+        <li>CSE 134B Web Client Languages (HTML,CSS,JS)</li>
+        <li>CSE 107 Intro to Modern Cryptography (Python)</li>
+        <li>CSE 158 Recommender System and Web Mining (Python)</li>
+        <li>CSE 132A Database System Principles (SQL)</li>
+        <li>CSE 127 Intro to Computer Security (C++, SQL)</li>
     </section>
     <!--Skills-->
     <section id = "skills" class = "component">
@@ -93,7 +160,6 @@
                 <li>Consistent work ethic</li>
                 <li>Attention to detail</li>
                 <li>Growth mindset</li>
-                <li>SQL</li>
             </div>
 
  
