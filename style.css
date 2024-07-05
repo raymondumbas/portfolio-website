@@ -16,13 +16,13 @@ html{
 
 body{
     margin:0;
-    padding:0;
+    padding:0 0 20rem 0;
     color: var(--text-color,white);
     background-color: var(--background-color,darkgrey);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+
 }
 
 
@@ -37,8 +37,7 @@ body{
     width: 70vw;
     display: flex;
     flex-direction: column;
-    padding:6rem 3rem 6rem 3rem;
-    margin-top: 3rem;
+    padding:6rem 3rem 0rem 3rem;
     align-items: center;
     border: 3px solid purple;
 }   
@@ -58,6 +57,11 @@ h1{
     border: 3px solid lightgreen;
 }
 
+.skill{
+    background-color: rgb(200, 204, 207);
+    color: var(--background-color);
+    border-radius: 5px;
+}
 /*Navbar*/
 #navBar{
     padding-left: 5rem;
@@ -87,11 +91,15 @@ a:hover{
 
 /* Intro */
 #intro{
-    font-size: 2rem;
+    height: 70vh;
+    width: 70vw;
+    padding-top: 15rem;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
     gap: 2rem;
+    border: 3px solid purple;
 }
 #introName{
     font-size: 6rem;
@@ -111,6 +119,7 @@ a:hover{
 #about{
     font-size: 1.5rem;
 }
+
 /*Projects*/
 .project{
     width: 33%;
@@ -141,14 +150,38 @@ a:hover{
     padding: 1rem;
     
 }
+.jobHeader{
+    display: flex;
+    flex-direction: row;
+}
 .jobYears{
     float: right;
 }
 
+.jobIcon{
+    width:3rem;
+    margin-right: 1rem;
+    border-radius: 25px;
+}
+
+/* Coursework */
+.course{
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    padding:1rem;
+    text-align: center;
+}
+#courseGrid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+/* Skills */
 .skills{
     background-color: var(--secondary-color);
     border-radius: 25px;
     padding: 1rem;
+    margin-bottom: 6rem;
 }
 .skills ul{
     font-size: 1.5rem;

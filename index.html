@@ -19,7 +19,7 @@
         <a class = "navBarLink" href = "#skills">Skills</a>
     </div>
     <!--Intro-->
-    <section id = "intro" class = "component">
+    <section id = "intro" >
         <span id = "introName">Raymond Umbas</span>
         Computer Science
         <div id = "links">
@@ -79,40 +79,65 @@
         <div id = "jobs" class = "componentContent">
             <div class = "job">
                 <span class = "jobYears">Jun 2023 - Present</span>
-                <span class = "jobTitle">Inbound Expert Trainer</span><br>
-                <span class = "jobCompany">Target</span><br><br>
+                <div class = "jobHeader">
+                    <img class = "jobIcon" src = "media/jobIcons/targetLogo.jpg">
+                    <div>
+                        <span class = "jobTitle">Inbound Expert Trainer</span><br>
+                        <span class = "jobCompany">Target</span>
+                    </div>
+                </div><br>
                 Conducted training for onboarding new Inbound Expert team members, 
                 sorted products from the trailer onto organized vehicles and 
                 stocked and arranged products on sales floor shelves.
             </div>
             <div class = "job">
                 <span class = "jobYears">Jan 2023 - Jun 2023</span>
-                <span class = "jobTitle">Project Specialist</span><br>
-                <span class = "jobCompany">The Container Store</span><br><br>
+                <div class = "jobHeader">
+                    <img class = "jobIcon" src = "media/jobIcons/tcsLogo.jpg">
+                    <div>
+                        <span class = "jobTitle">Project Specialist</span><br>
+                        <span class = "jobCompany">The Container Store</span>
+                    </div>
+                </div><br>
                 Organized and stocked shelves.
                 Assisted customers with looking for items in store and online.
                 Found solutions for customers' organization and storage needs.
             </div>
             <div class = "job">
                 <span class = "jobYears">Sep 2021 - Jan 2023</span>
-                <span class = "jobTitle">Food Runner/Takeout</span><br>
-                <span class = "jobCompany">BJ's Restaurant Inc.</span><br><br>
+                <div class = "jobHeader">
+                    <img class = "jobIcon" src = "media/jobIcons/bjsLogo.jpg">
+                    <div>
+                        <span class = "jobTitle">Food Runner/Takeout</span><br>
+                        <span class = "jobCompany">BJ's Restaurant Inc.</span>
+                    </div>
+                </div><br>
                 Brought food out to the table and maintained general kitchen cleanliness.
                 Wrote up customer takeout orders and processed payments.
                 Packed, organized, and brought out takeout orders.
             </div>
             <div class = "job">
                 <span class = "jobYears">Jul 2020 - Sep 2021</span>
-                <span class = "jobTitle">Personal Shopper</span><br>
-                <span class = "jobCompany">Walmart</span><br><br>
+                <div class = "jobHeader">
+                    <img class = "jobIcon" src = "media/jobIcons/walmartLogo.jpg">
+                    <div>
+                        <span class = "jobTitle">Personal Shopper</span><br>
+                        <span class = "jobCompany">Walmart</span>
+                    </div>
+                </div><br>
                 Selected items for online orders, achieving a pick rate approximately 70% above average,
                 organized order totes and brought them out to customers, and
                 utilized department’s order database to query order statuses and resolve customer issue.
             </div>
             <div class = "job">
                 <span class = "jobYears">May 2019 - Aug 2020</span>
-                <span class = "jobTitle">Shift Leader</span><br>
-                <span class = "jobCompany">Coldstone Creamery</span><br><br>
+                <div class = "jobHeader">
+                    <img class = "jobIcon" src = "media/jobIcons/coldstoneLogo.png">
+                    <div>
+                        <span class = "jobTitle">Shift Leader</span><br>
+                        <span class = "jobCompany">Coldstone Creamery</span>
+                    </div>
+                </div><br>
                 Managed all in-store operations by delegating tasks to crew members, scheduled breaks, and handled all customer complaints.
                 Conducted training for new crew members and shift leader. Tracked inventory and reported daily sales for two locations.
                 Maintained store cleanliness, assisted customers, and restocked supplies.
@@ -121,15 +146,50 @@
     </section>
     <!--Coursework-->
     <section id = "coursework" class = "component">
-        <h1><ul>Relevant Coursework</ul></h1>
-        <li>CSE 100 Advanced Data Structures (C++, Data Structures)</li>
-        <li>CSE 120 Principles of Computer Operating Systems (C++)</li>
-        <li>CSE 110 Software Engineering (HTML,CSS,JS,AGILE)</li>
-        <li>CSE 134B Web Client Languages (HTML,CSS,JS)</li>
-        <li>CSE 107 Intro to Modern Cryptography (Python)</li>
-        <li>CSE 158 Recommender System and Web Mining (Python)</li>
-        <li>CSE 132A Database System Principles (SQL)</li>
-        <li>CSE 127 Intro to Computer Security (C++, SQL)</li>
+        <h1>Relevant Coursework</h1>
+        <div id = "courseGrid" class = "componentContent">
+            <div class = "course">
+                CSE 100 Advanced Data Structures<br><br>
+                <span class = "skill">C++</span>
+                <span class = "skill">Data Structures</span>
+            </div>
+            <div class = "course">
+                CSE 120 Computer Operating Systems<br><br>
+                <span class = "skill">C++</span>
+            </div>
+            <div class = "course">
+                CSE 110 Software Engineering<br><br>
+                <span class = "skill">HTML</span>
+                <span class = "skill">CSS</span>
+                <span class = "skill">JS</span>
+                <span class = "skill">AGILE</span>
+            </div>
+            <div class = "course">
+                CSE 134B Web Client Languages<br><br>
+                <span class = "skill">HTML</span>
+                <span class = "skill">CSS</span>
+                <span class = "skill">JS</span>
+                <span class = "skill">AGILE</span>
+            </div>
+            <div class = "course">
+                CSE 107 Intro to Modern Cryptography<br><br>
+                <span class = "skill">Python</span>
+            </div>
+            <div class = "course">
+                CSE 158 Recommender System and Web Mining<br><br>
+                <span class = "skill">Python</span>
+            </div>
+            <div class = "course">
+                CSE 132A Database System Principles<br><br>
+                <span class = "skill">SQL</span>
+            </div>
+            <div class = "course">
+                CSE 127 Intro to Computer Security<br><br>
+                <span class = "skill">C++</span>
+                <span class = "skill">SQL</span>
+            </div>
+        </div>
+
     </section>
     <!--Skills-->
     <section id = "skills" class = "component">
