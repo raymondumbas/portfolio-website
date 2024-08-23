@@ -139,8 +139,10 @@ a:hover{
 
 .projectIcon{
     width:3rem;
-    padding: 1rem;
     float: right;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+
 }
 
 /*Experience*/
